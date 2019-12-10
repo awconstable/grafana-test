@@ -1,0 +1,1 @@
+curl -G http://192.168.0.40:8086/query --data-urlencode "q=CREATE DATABASE metrics"

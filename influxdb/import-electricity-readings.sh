@@ -1,4 +1,4 @@
-curl -i -XPOST 'http://localhost:8086/write?db=metrics&precision=s' --data-binary 'energy_reading,location=flanders,type=electricity value=17086 1540771200
+curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' --data-binary 'energy_reading,location=flanders,type=electricity value=17086 1540771200
 energy_reading,location=flanders,type=electricity value=17129 1541376000
 energy_reading,location=flanders,type=electricity value=17195 1541980800
 energy_reading,location=flanders,type=electricity value=17241 1542585600
