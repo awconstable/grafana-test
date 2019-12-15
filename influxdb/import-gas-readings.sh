@@ -1,3 +1,5 @@
+#!/bin/sh
+
 curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' --data-binary 'energy_reading,location=flanders,type=gas value=3512 1540771200
 energy_reading,location=flanders,type=gas value=3524 1541376000
 energy_reading,location=flanders,type=gas value=3533 1541980800
@@ -54,4 +56,7 @@ energy_reading,location=flanders,type=gas value=3858 1573344000
 energy_reading,location=flanders,type=gas value=3870 1573948800
 energy_reading,location=flanders,type=gas value=3883 1574553600
 energy_reading,location=flanders,type=gas value=3894 1575158400
-energy_reading,location=flanders,type=gas value=3905 1575763200'
+energy_reading,location=flanders,type=gas value=3905 1575763200';
+
+curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' \
+--data-binary 'energy_reading,location=flanders,type=gas value=3920 1576446203';

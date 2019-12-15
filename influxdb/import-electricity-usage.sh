@@ -1,3 +1,5 @@
+#!/bin/sh
+
 curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' --data-binary 'energy_usage,location=flanders,type=electricity value=48.25 1535932800
 energy_usage,location=flanders,type=electricity value=48.25 1536537600
 energy_usage,location=flanders,type=electricity value=48.25 1537142400
@@ -63,4 +65,7 @@ energy_usage,location=flanders,type=electricity value=56 1572825600
 energy_usage,location=flanders,type=electricity value=43 1573344000
 energy_usage,location=flanders,type=electricity value=57 1573948800
 energy_usage,location=flanders,type=electricity value=62 1574553600
-energy_usage,location=flanders,type=electricity value=57 1575158400'
+energy_usage,location=flanders,type=electricity value=57 1575158400';
+
+curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' \
+--data-binary 'energy_usage,location=flanders,type=electricity value=59 1576446203';
