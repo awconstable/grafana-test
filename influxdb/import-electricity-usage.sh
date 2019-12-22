@@ -69,3 +69,6 @@ energy_usage,location=flanders,type=electricity value=57 1575158400';
 
 curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' \
 --data-binary 'energy_usage,location=flanders,type=electricity value=59 1576446203';
+
+curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' \
+--data-binary 'energy_usage,location=flanders,type=electricity value=30 1576972800';

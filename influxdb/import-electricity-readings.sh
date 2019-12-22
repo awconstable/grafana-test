@@ -60,3 +60,6 @@ energy_reading,location=flanders,type=electricity value=19923 1575763200';
 
 curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' \
 --data-binary 'energy_reading,location=flanders,type=electricity value=19982 1576446203';
+
+curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' \
+--data-binary 'energy_reading,location=flanders,type=electricity value=20012 1576972800';
