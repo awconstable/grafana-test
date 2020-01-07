@@ -63,3 +63,9 @@ curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' \
 
 curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' \
 --data-binary 'energy_reading,location=flanders,type=electricity value=20012 1576972800';
+
+curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' \
+--data-binary 'energy_reading,location=flanders,type=electricity value=20037 1577577600';
+
+curl -i -XPOST 'http://192.168.0.40:8086/write?db=metrics&precision=s' \
+--data-binary 'energy_reading,location=flanders,type=electricity value=20063 1578182400';
